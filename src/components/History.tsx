@@ -18,7 +18,12 @@ const History = () => {
       )}
 
       {/* リセットボタン */}
-      <button onClick={resetHistory}>リセット</button>
+      <button
+        onClick={resetHistory}
+        className="mt-5 border px-20 py-5 rounded bg-gray-400 text-black font-bold hover:opacity-80 cursor-pointer"
+      >
+        リセット
+      </button>
     </div>
   );
 };
