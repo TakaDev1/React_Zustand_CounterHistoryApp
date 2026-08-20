@@ -3,6 +3,7 @@ import { useCountStore } from "../stores/CounterStore";
 
 const History = () => {
   const { history, resetHistory } = useCountStore();
+
   return (
     <div>
       {/* 履歴一覧 */}
@@ -15,6 +16,7 @@ const History = () => {
       ) : (
         <p>履歴がありません</p>
       )}
+
       {/* リセットボタン */}
       <button onClick={resetHistory}>リセット</button>
     </div>
